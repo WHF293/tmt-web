@@ -1,0 +1,52 @@
+@import '../lf.less';
+
+.editBar_box {
+  width: 240px;
+  overflow-y: scroll;
+  position: absolute;
+  background-color: @grayBg;
+  right: 0;
+  padding: 12px;
+  border-left: 1px solid #ccc;
+
+  .edit_title {
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .edit_item_title {
+    margin: 12px 0;
+    border-left: 4px solid @themeColor;
+    border-bottom: 1px solid @themeColor;
+    padding: 4px 12px;
+  }
+  .font_edit_box {
+    display: flex;
+    .font_item {
+      cursor: pointer;
+      margin-right: 12px;
+      border-radius: 6px;
+      width: 28px;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .items_center {
+    display: flex;
+    align-items: center;
+  }
+
+  .active_bg {
+    background-color: @activeColor;
+    transition: 0.3s;
+  }
+
+  .mb_2 {
+    margin-bottom: 8px;
+  }
+}

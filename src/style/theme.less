@@ -1,0 +1,25 @@
+@import './var.less';
+
+@themeColor: var(--theme-color);
+@activeColor: var(--active-color);
+
+@commonBgc_01: var(--common-bgc-01);
+@commonBgc_02: var(--common-bgc-02);
+@commonBgc_03: var(--common-bgc-03);
+@commonBgc_04: var(--common-bgc-04);
+
+@hoverBgc_01: var(--hover-bgc-01);
+@hoverBgc_02: var(--hover-bgc-02);
+@hoverBgc_03: var(--hover-bgc-03);
+@hoverBgc_04: var(--hover-bgc-04);
+
+
+.hoverBgc() {
+  &:hover {
+    background: radial-gradient(circle at 30% 40%, @hoverBgc_01, @hoverBgc_02, @hoverBgc_03, @hoverBgc_04);
+  }
+}
+
+.layoutBgc() {
+  background: radial-gradient(circle at 10% 0%, @commonBgc_01, @commonBgc_02, @commonBgc_03, @commonBgc_04);
+}

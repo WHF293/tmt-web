@@ -1,0 +1,58 @@
+@import '../../style/theme.less';
+
+.home_page {
+  @apply flex p-4 pb-6 pb-0 mt-3;
+
+  .left_module {
+    @apply w-7/10 pr-4 h-full;
+    .home_title {
+      @apply py-3 text-xl font-medium  p-4 mb-3 rounded-xl;
+    }
+
+    .quick_module_title {
+      @apply flex items-center justify-between;
+    }
+
+    .home_quick_module {
+      @apply flex  p-4 mb-3 rounded-xl;
+
+      .card_item {
+        @apply m-2 rounded-xl bg-gray-200 border-1 border-solid border-light-200;
+      }
+
+      .card_project_item {
+        @apply bg-light-200 rounded-xl m-2 w-min-200px h-120px p-4 pb-0 cursor-pointer;
+
+      }
+    }
+
+    .home_notice_module {
+      @apply p-4 mb-3 rounded-xl;
+    }
+
+    .home_other {
+      @apply h-280px p-4 mb-3 rounded-xl;
+    }
+
+    .more_info {
+      @apply w-1/2  mt-4 bg-light-200 h-190px p-4 rounded-lg;
+    }
+  }
+
+  .right_module {
+    @apply w-3/10  rounded-xl p-5 mb-3;
+  }
+
+  .hover_bg {
+    &:hover {
+      transform: scale(1.02);
+      @apply duration-400 ease-in;
+    }
+  }
+  .hover_bg_1 {
+    &:hover {
+      transform: scale(1.01);
+      @apply duration-400 ease-in;
+    }
+  }
+}

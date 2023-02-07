@@ -1,0 +1,31 @@
+@import '../lf.less';
+
+.ctrlBar_box {
+  position: absolute;
+  background-color: @grayBg;
+  left: 240px;
+  top: 8px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  height: 44px;
+  padding: 4px 12px;
+  cursor: pointer;
+
+  .ctrl_item {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4px;
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 4px @themeColor;
+  }
+
+  .active_bg {
+    // background-color: @activeColor;
+    transition: .3s;
+  }
+}

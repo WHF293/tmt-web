@@ -1,0 +1,23 @@
+@themeColor: var(--themeColor, #8b5df6);
+@activeColor: var(--activeColor, rgb(202, 162, 237));
+@grayBg: #f3f4f6;
+
+.lf_flow_chart {
+  border: 1px solid #ccc;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  -ms-overflow-style: none;
+
+  .lf_hover_scale {
+    transform: scale(0.95);
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+
+  .lf_item_shadow {
+    box-shadow: 1px 1px 4px @themeColor;
+  }
+}

@@ -1,0 +1,122 @@
+
+html,
+body,
+#root {
+  @apply w-full h-full;
+}
+
+.s-required {
+  &::before {
+    content: '*';
+    position: relative;
+    color: red;
+    right: 4px;
+  }
+}
+
+.hover-scale {
+  transform: scale(.98);
+  transition: .6s;
+  &:hover {
+    transform: scale(1.01);
+  }
+}
+
+.common-border-bottom {
+  padding-bottom: 12px;
+  border-bottom: 1px solid #ccc;
+}
+
+#dark {
+  filter: invert(100%) hue-rotate(180deg);
+
+  img,
+  video,
+  .no-filter {
+    filter: invert(100%) hue-rotate(180deg) contrast(100%);
+  }
+}
+
+::-webkit-scrollbar {
+  color: rgb(97, 93, 93);
+  height: 5px;
+  width: 5px;
+}
+
+svg {
+  cursor: pointer;
+  margin: 0 4px;
+}
+
+.form-item {
+  width: 25%;
+  margin-bottom: 8px !important;
+}
+
+.double-width {
+  width: 50%;
+}
+
+.disabled {
+  @apply cursor-not-allowed;
+}
+
+// 任务列表
+/* 入场动画过程 */
+.baseAnimate-enter {
+  opacity: 0;
+  transform: translateY(600px);
+}
+.baseAnimate-enter-active {
+  transition: 0.8s;
+  opacity: 1;
+  transform: translateY(0px);
+}
+.baseAnimate-enter-done {
+  opacity: 1;
+  transform: translateY(0px);
+}
+/* 出场动画过程 */
+.baseAnimate-exit {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.baseAnimate-exit-active {
+  transition: 0.8s;
+  opacity: 0;
+  transform: translateY(-600px);
+}
+.baseAnimate-exit-done {
+  opacity: 0;
+  transform: translateY(-600px);
+}
+
+// 文档库
+/* 入场动画过程 */
+.docsAnimate-enter {
+  opacity: 0;
+  transform: translateX(1200px);
+}
+.docsAnimate-enter-active {
+  transition: 0.6s;
+  opacity: 1;
+  transform: translateX(0px);
+}
+.docsAnimate-enter-done {
+  opacity: 1;
+  transform: translateX(0px);
+}
+/* 出场动画过程 */
+.docsAnimate-exit {
+  opacity: 1;
+  transform: translateX(0px);
+}
+.docsAnimate-exit-active {
+  transition: 0.6s;
+  opacity: 0;
+  transform: translateX(-1200px);
+}
+.docsAnimate-exit-done {
+  opacity: 0;
+  transform: translateX(-1200px);
+}

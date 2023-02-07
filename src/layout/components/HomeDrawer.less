@@ -1,0 +1,21 @@
+@import '../../style/theme.less';
+
+.wrapper_box {
+  @apply flex w-full flex-wrap;
+  .wrapper_item {
+    @apply w-3/10 cursor-pointer p-2 m-2 text-purple-200 duration-150;
+
+    .wrapper_sub_title {
+      margin-bottom: 12px;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    .wrapper_sub_item {
+      margin-bottom: 4px;
+      &:hover {
+        color: @activeColor;
+      }
+    }
+  }
+}

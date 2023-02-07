@@ -1,0 +1,53 @@
+@import '../lf.less';
+
+.sideBar_box {
+  position: absolute;
+  transition: 0.5s;
+  user-select: none;
+  width: 210px;
+  padding: 4px 8px;
+  overflow-y: scroll;
+  background-color: @grayBg;
+  border-right: 1px solid #ccc;
+
+  .node_group {
+    background-color: #fff;
+    cursor: pointer;
+    border: 1px solid #e0e7ff;
+    padding: 0 8px;
+
+    .node_group_title {
+      padding: 8px 0;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #e0e7ff;
+    }
+
+    .expand_on_off {
+      @apply duration-1200;
+    }
+
+    .node_group_content {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 4px;
+
+      .node_item {
+        width: 32px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #e0e7ff;
+        background-color: #fff;
+        border-radius: 6px;
+        margin: 4px;
+      }
+    }
+  }
+
+  .items_center {
+    display: flex;
+    align-items: center;
+  }
+}

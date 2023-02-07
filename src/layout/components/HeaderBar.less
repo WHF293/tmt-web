@@ -1,0 +1,27 @@
+.header_bar {
+  @apply flex  bg-gray-700 justify-between items-center h-full;
+
+  .left_area {
+    @apply flex items-center;
+
+    .home_logo {
+      width: 90px;
+      height: 32px;
+      margin-left: 10px;
+      background-repeat: no-repeat;
+      background-image: url('https://whf-img.oss-cn-hangzhou.aliyuncs.com/img/202301102258172.png');
+      background-size: contain;
+    }
+    .home_btn {
+      @apply text-white cursor-pointer hover:text-purple-400 flex items-center;
+    }
+  }
+
+  .right_area {
+    @apply flex items-center h-full;
+
+    .theme_btn {
+      @apply mx-4 cursor-pointer h-full flex items-center;
+    }
+  }
+}

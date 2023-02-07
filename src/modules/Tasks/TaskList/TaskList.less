@@ -1,0 +1,32 @@
+.task_list_page {
+  @apply py-5 px-4 min-h-800px mt-3;
+
+  .task_list_option {
+    @apply bg-light-200 p-4 pb-4 mb-5 rounded-sm shadow-lg;
+
+    .task_list_option_title {
+      @apply flex items-center justify-between;
+
+      svg:hover {
+        path {
+          stroke: #8b5cf6 !important;
+        }
+      }
+    }
+    .task_list_option_content {
+      @apply flex items-center justify-between;
+    }
+  }
+
+  .task_list_table {
+    @apply bg-light-200 p-4 pt-2 rounded-sm shadow-lg;
+  }
+}
+
+.edit_icon {
+  svg:hover {
+    path {
+      stroke: #bd10e0 !important;
+    }
+  }
+}

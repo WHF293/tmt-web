@@ -1,0 +1,23 @@
+.docs_detail_page {
+  @apply p-4 w-full;
+  .docs_detail_left_box {
+    @apply w-40 mr-3 bg-light-100 p-2 h-850px overflow-y-hidden flex-shrink-0 border-1 border-solid border-gray-200 shadow-lg;
+    .docs_detail_item_box {
+      @apply h-710px overflow-y-scroll;
+      .docs_detail_item {
+        @apply truncate py-2 px-3 bg-purple-50 my-2 cursor-pointer hover:bg-purple-100 shadow-lg border-1 border-solid border-purple-100 rounded-lg;
+      }
+      .active_item_color {
+        @apply bg-purple-200 hover:bg-purple-200;
+      }
+    }
+  }
+  .docs_detail_right_box {
+    @apply w-full shadow-lg;
+
+    .docs_detail_title_box {
+      border-bottom: 1px solid #ccc;
+      @apply flex justify-between items-center px-3 py-2;
+    }
+  }
+}

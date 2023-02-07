@@ -1,0 +1,30 @@
+.docs_page {
+  @apply flex w-full;
+  
+  .docs_page_left {
+    .docs_menu {
+      height: 100%;
+      @apply h-full overflow-hidden;
+    }
+
+    @apply shadow-lg;
+    .docs_page_header_btn {
+      @apply fixed bg-light-300  bottom-20px left-68px;
+    }
+  }
+}
+
+.docs_index_page {
+  @apply flex justify-center items-center h-full flex-col;
+
+  .docs_index_main_box {
+    @apply w-140 h-130  p-4 rounded-lg shadow-lg border-1 border-solid border-sky-100 cursor-pointer bg-light-200;
+
+    .docs_info_title {
+      @apply text-center text-purple-300 text-3xl;
+    }
+    .docs_info_img {
+      @apply w-full shadow-lg border-1 border-solid border-sky-100;
+    }
+  }
+}

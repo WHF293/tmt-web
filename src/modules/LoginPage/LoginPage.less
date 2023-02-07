@@ -1,0 +1,31 @@
+.login_page {
+  @apply w-full h-full flex justify-center items-center bg-gradient-57;
+
+  .login_box {
+    @apply flex w-400px sm:w-800px bg-warm-gray-100 m-auto rounded-lg shadow-gray-500/50 shadow-lg;
+
+    .login_form {
+      @apply w-full sm:w-1/2  min-h-400px;
+
+      .login_expand {
+        @apply text-xs mt-3 text-right mx-8;
+
+        span {
+          @apply text-purple-300 mx-1 cursor-pointer hover:text-purple-600;
+        }
+      }
+    }
+    .login_img {
+      @apply w-1/2  hidden sm:block bg-no-repeat;
+      border-radius: 0rem 0.5rem 0.5rem 0rem;
+      background: url('https://whf-img.oss-cn-hangzhou.aliyuncs.com/img/login-bg.jpg');
+      background-size: 100%;
+    }
+  }
+}
+
+#dark {
+  .login_box {
+    @apply dark:bg-warm-gray-100;
+  }
+}
